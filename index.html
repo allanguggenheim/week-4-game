@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Star Wars Game</title>
+
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+  <!-- Added our game.js -->
+  <script type="text/javascript" src="game.js"></script>>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div class="jumbotron">
+    <h1 class="text-center">Star Wars</h1>
+    <h3 class="text-center">The video game!</h3>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+        <!-- Game Panel -->
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Game</h3>
+                </div>
+
+                <div class="panel-body">
+                    <h3>Choose Character Area</h3>
+                      <div id="notChosenButtonsArea">
+                            <button id="btnLukeS" class="btn btn-primary character" value="LukeS"></button>
+                            <button id="btnObiW" class="btn btn-primary character" value="ObiW"></button>
+                            <button id="btnDarthS" class="btn btn-primary character" value="DarthS"></button>
+                            <button id="btnDarthM" class="btn btn-primary character" value="DarthM"></button>
+                      </div>
+                    <h3>Choosen Player Area</h3>
+                    <br><br>
+                      <div id="chosenPlayerAreaUI"></div>
+                    <h3>Choosen Opponent Area</h3>
+                    <br><br>
+                      <div id="chosenOpponentAreaUI"></div>
+                    <br><br>
+                    <button id="btnAttack" class="btn btn-primary attack" value="Attack"><h4>ATTACK!</h4></button>
+                    <br><br>
+                    <button id="btnResetGame" class="btn btn-primary reset" value="ResetGame"><h5>Reset Game</h5></button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Panel -->
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Score and Stats</h3>
+                </div>
+                <div class="panel-body">
+                    <h1 id="firstcharacter"></h1>
+                    <h1 id="operator"></h1>
+                    <h1 id="secondcharacter"></h1>
+                    <hr>
+                    <h1 id="result"></h1>
+                    <h5>Player Score: </h5> <h5 id="playerHealthPoints"></h5><br><br>
+                    <h5>Player Attack Power: <h5 id="playerAttackPower"></h5></h5> <br><br>
+                    <h5>Opponent Score: </h5> <h5 id="opponentHealthPoints"></h5><br><br>
+                    <h5>Opponent Attack Power: </h5> <h5 id="opponentAttackPower"></h5><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+.button {
+	cursor: crosshair;
+}
+#btnObiW{
+    background: url(images/ObiW.png) no-repeat;
+    height: 90px;
+    width: 90px;
+}
+#btnLukeS{
+    background: url(images/LukeS.png) no-repeat;
+    height: 90px;
+    width: 90px;
+}
+#btnDarthM{
+    background: url(images/DarthM.png) no-repeat;
+    height: 90px;
+    width: 90px;
+}
+#btnDarthS{
+    background: url(images/DarthS.png) no-repeat;
+    height: 90px;
+    width: 90px;
+}
